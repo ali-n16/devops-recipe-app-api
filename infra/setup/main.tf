@@ -7,11 +7,11 @@ terraform {
   }
 
   backend "s3" {
-    bucket         = "alin1611-tf-state"
-    key            = "tf-state-setup"
+    bucket         = "alin1611-backend"
+    key            = "myproject/dev/terraform.tfstate"
     region         = "eu-west-1"
     encrypt        = true
-    dynamodb_table = "tf-lock"
+    dynamodb_table = "terraform-state-lock"
   }
 }
 

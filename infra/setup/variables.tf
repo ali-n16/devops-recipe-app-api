@@ -1,11 +1,11 @@
 variable "tf_state_bucket" {
   description = "Name of S3 bucket in AWS for storing tf state"
-  default     = "alin1611-tf-state"
+  default     = "alin1611-backend"
 }
 
 variable "tf_state_lock_table" {
   description = "Name of DynamoDB table for TF state locking"
-  default     = "tf-lock"
+  default     = "terraform-state-lock"
 }
 
 variable "project" {
