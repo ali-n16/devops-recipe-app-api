@@ -7,12 +7,12 @@ terraform {
   }
 
   backend "s3" {
-    bucket         = "alin1611-backend"
+    bucket               = "alin1611-backend"
     key                  = "tf-state-deploy"
     workspace_key_prefix = "tf-state-deploy-env"
     region               = "eu-west-1"
     encrypt              = true
-    dynamodb_table = "terraform-state-lock"
+    dynamodb_table       = "terraform-state-lock"
   }
 }
 
